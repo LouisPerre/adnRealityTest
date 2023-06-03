@@ -12,7 +12,7 @@
     <title>ADN Reality test</title>
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="d-flex flex-column headerText">
             <img src="./assets/logo.svg" alt="Logo" class="logo">
             <div class="headerLocalisation">
@@ -47,7 +47,87 @@
                 TRAVAUX EN COURS
             </button>
         </div>
-    </div>
+    </header>
+    <main>
+        <section class="cta">
+            <div class="leftParagraphe">
+                <h3>Villa Coquetiers : Un emplcement tranquille,
+                    pratique et accessible à 300m* du tramway
+                </h3>
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                        A 300m du tram
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                        Quartier des Coquetiers
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                        Proche des commerces et services
+                    </li>
+                </ul>
+                <p class="firstParagraphe">
+                    Dans le quartier pavillonnaire des Coquetiers, la résidence prend place à proximité
+                    des commerces, services et établissements scolaires. La gare du RER E se rejoint
+                    facilement par le tram situé à 4 minutes* seulement de la résidence.
+                </p>
+                <p>
+                    Entourée d’un jardin, Villa Coquetiers s’élève sur 2 bâtiments composés d’un nombre
+                    réduit d’appartements lumineux s’ouvrant sur des baies vitrées donnant sur un balcon,
+                    une terrasse ou une loggia.
+                </p>
+            </div>
+            <div class="rightForm"> 
+                <h2>Devenez propriétaire à Villemomble</h2>
+                <div class="radio">
+                    <form>
+                        <div class="radioInput">
+                            <p>Civilité<span>*</span></p>
+                            <div class="input">
+                                <input type="radio" id="radioFeminin" name="radio">
+                                <label for="radioFeminin">Madame</label>
+                            </div>
+                            <div class="input">
+                                <input type="radio" id="radioMasculin" name="radio" checked>
+                                <label for="radioMasculin">Monsieur</label>
+                            </div>
+                        </div>
+                        <input type="text" id="inputLastName" class="inputText" placeholder="Nom*">
+                        <input type="text" id="inputFirstName" class="inputText" placeholder="Prénom*">
+                        <div class="inputNumber">
+                            <input type="text" id="inputPhoneNumber" class="inputText" placeholder="Téléphone*">
+                            <input type="text" id="inputPostalCode" class="inputText" placeholder="Code postal*">
+                        </div>
+                        <div class="radioInput">
+                            <p>Je souhaite<span>*</span></p>
+                            <div class="input">
+                                <input type="radio" id="radioLive" name="radio1">
+                                <label for="radioLive">Habiter</label>
+                            </div>
+                            <div class="input">
+                                <input type="radio" id="radioInvest" name="radio1" checked>
+                                <label for="radioInvest">Investir</label>
+                            </div>
+                        </div>
+                        <textarea name="message" id="messageInvest" placeholder="Votre message"></textarea>
+                        <div class="checkboxInput">
+                            <input type="checkbox" id="checkboxRight">
+                            <label for="checkboxRight">En cochant cette case, je consens à recevoir des offres commerciales et
+                                des informations sur les produits et services de Promogim - <span>Mention sur
+                                la protection des données personnelles.</span></label>
+                        </div>
+                        <button class="submitForm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.85 19.38"><defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke-miterlimit:10;}.cls-2{stroke-width:3px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path id="arrow" class="cls-1" d="M1.06,1.06,9.72,9.69,1.06,18.32"/><path id="arrow-2" data-name="arrow" class="cls-2" d="M1.06,1.06,9.72,9.69,1.06,18.32"/></g></g></svg>
+                            ENVOYER MON MESSAGE
+                        </button>
+                        <span>* Champs obligatoire</span>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

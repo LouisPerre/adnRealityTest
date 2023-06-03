@@ -13,7 +13,7 @@ h1, h2, h3, h4, span, p {
 body {
     padding-left: 100px;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -21,9 +21,10 @@ h1 {
     font-weight: 600 !important;
 }
 
-.header {
+header {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 4.3rem !important;
     /* max-width: 1510px; */
 }
 
@@ -61,7 +62,7 @@ h1 {
 
 .price {
     position: relative;
-    height: 90px;
+    height: 105px;
 }
 
 .redPrice {
@@ -178,5 +179,179 @@ h1 {
 @media (min-width: 1700px) {
     .headerImage {
         max-width: 1200px;
+        max-height: 700px;
     }
+}
+
+main {
+    width: 100%;
+}
+
+.cta {
+    display: flex;
+    gap: 6.25rem;
+    width: 100%;
+    position: relative;
+}
+
+.leftParagraphe {
+    width: 75%;
+    max-width: 850px;
+}
+
+.leftParagraphe h3 {
+    font-size: 36px;
+    margin-bottom: 2.6rem !important;
+}
+
+.leftParagraphe ul {
+    font-size: 22px;
+    margin-bottom: 4rem !important;
+    list-style: none;
+}
+
+.leftParagraphe ul li svg {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+    padding: 0.2rem;
+    border-radius: 50%;
+    background-color: #D51125;
+    margin-right: 1rem;
+    /* fill: #D51125; */
+}
+
+.leftParagraphe > .firstParagraphe {
+    margin-bottom: 1rem !important;
+}
+
+.leftParagraphe p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.rightForm {
+    width: 31%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 3rem 1rem 3rem;
+    background-color: #145A97;
+    color: white;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.rightForm h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem !important;
+}
+
+.rightForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rightForm form .radioInput {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.rightForm input[type=text], textarea {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #fff;
+}
+
+.rightForm textarea {
+    padding: 0.5rem 1rem;
+    height: 90px;
+}
+
+.rightForm .inputNumber {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.rightForm .checkboxInput {
+    display: flex;
+    gap: 0.2rem;
+    align-items: flex-start;
+}
+
+.rightForm .checkboxInput label {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.rightForm .checkboxInput label span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.rightForm input[type='radio']:after {
+    width: 17.25px;
+    height: 17.25px;
+    border-radius: 17.25px;
+    top: -2px;
+    left: -5px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.rightForm input[type='radio']:checked:after {
+    width: 17.25px;
+    height: 17.25px;
+    border-radius: 17.25px;
+    top: -2px;
+    left: -5px;
+    position: relative;
+    background-color: #D51125;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.rightForm input[type='checkbox'] {
+    accent-color: #fff;
+}
+
+.rightForm .submitForm {
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    background-color: #D51125;
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.rightForm .submitForm svg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    stroke: #D51125;
+    padding: 0.2rem;
+}
+
+form > span {
+    width: 100%;
+    font-size: 10px;
 }
