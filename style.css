@@ -1,0 +1,182 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    /* color: #002a5c; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, span, p {
+    margin-bottom: 0 !important;
+}
+
+body {
+    padding-left: 100px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 48px !important;
+    font-weight: 600 !important;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    /* max-width: 1510px; */
+}
+
+.logo {
+    width: 50%;
+    max-width: 200px;
+}
+
+.headerText {
+    width: 80%;
+    max-width: 480px;
+    padding-top: 2rem;
+    justify-content: space-between;
+}
+
+.headerLocalisation span {
+    background-color: #fff7f7;
+    color: #d51125;
+    padding: 0.6rem 1rem;
+    border-radius: 21px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.headerLocalisation svg {
+    width: 16px;
+    fill: #d51125;
+}
+
+.headerPrice h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 1rem !important;
+}
+
+.price {
+    position: relative;
+    height: 90px;
+}
+
+.redPrice {
+    background-color: #D51125;
+    color: white !important;
+    font-size: 0.6rem;
+    padding: 0.6rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    /* width: 100%; */
+    position: absolute;
+    z-index: 2;
+}
+
+.redPrice h2 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
+    width: max-content;
+}
+
+.redPrice p {
+    width: max-content;
+}
+
+.transparentPrice {
+    background-color: transparent;
+    color: white !important;
+    font-size: 0.6rem;
+    padding: 0.6rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    /* width: 100%; */
+    border: 1px solid #002A5C;
+    z-index: 0;
+}
+
+.transparentPrice h2 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
+    width: max-content;
+}
+
+.transparentPrice p {
+    width: max-content;
+}
+
+.headerImage {
+    max-width: 1030px;
+    max-height: 620px;
+    width: 80%;
+    position: relative;
+}
+
+.headerImage img{
+    width: 100%;
+
+}
+
+.livraison {
+    display: flex;
+    background-color: #145A97;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    /* gap: 0.5rem; */
+    align-items: center;
+    padding: 0.7rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    transition: all 0.1s ease-in;
+}
+
+.livraison:hover {
+    background-color: #0e3f6a;
+}
+
+.clock {
+    width: 22px;
+    fill: white;
+    margin-right: 0.5rem;
+}
+
+.travaux {
+    background-color: #D51125;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    /* gap: 0.5rem; */
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 100px;
+    transition: all 0.1s ease-in;
+}
+
+.travaux:hover {
+    background-color: #9d0b1a;
+}
+
+@media (min-width: 1700px) {
+    .headerImage {
+        max-width: 1200px;
+    }
+}
