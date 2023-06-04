@@ -11,7 +11,7 @@ h1, h2, h3, h4, span, p {
 }
 
 body {
-    padding-left: 100px;
+    padding-left: 6.25rem;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -38,6 +38,12 @@ header {
     max-width: 480px;
     padding-top: 2rem;
     justify-content: space-between;
+    flex-direction: column;
+}
+
+.headerLocalisation h1 {
+    color: #002A5C;
+    margin-bottom: 0.2rem !important;
 }
 
 .headerLocalisation span {
@@ -58,6 +64,7 @@ header {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 1rem !important;
+    color: #002A5C;
 }
 
 .price {
@@ -185,6 +192,10 @@ header {
 
 main {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 5rem !important;
 }
 
 .cta {
@@ -197,6 +208,7 @@ main {
 .leftParagraphe {
     width: 75%;
     max-width: 850px;
+    color: #002A5C;
 }
 
 .leftParagraphe h3 {
@@ -354,4 +366,310 @@ main {
 form > span {
     width: 100%;
     font-size: 10px;
+}
+
+.photo {
+    position: relative;
+    height: 51vh;
+    max-height: 452px;
+}
+
+.photo .upperImage {
+    width: 55%;
+    position: absolute;
+    z-index: 2;
+}
+
+.upperImage img {
+    width: 95%;
+    max-width: 755px;
+    max-height: 420px;
+}
+
+.underImage {
+    width: 51vw;
+    height: 500px;
+    max-width: 755px;
+    max-height: 420px;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: #145A97;
+    z-index: 0;
+}
+
+footer {
+    font-size: 12px;
+    font-weight: 400;
+    color: #002A5C;
+    margin-right: 6.25rem;
+    text-align: justify;
+}
+
+/* @media (max-width: 1463px) {
+    .underImage {
+        max-width: 720px;
+    }
+} */
+
+@media (max-width: 1440px) {
+    .rightForm {
+        right: 50px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .headerLocalisation h1 {
+        font-size: 40px !important;
+    }
+
+    .headerPrice h2 {
+        font-size: 30px;
+    }
+
+    .transparentPrice h2 {
+        font-size: 30px;
+    }
+
+    .redPrice h2 {
+        font-size: 30px;
+    }
+
+    .livraison {
+        font-size: 16px;
+    }
+
+    .cta {
+        position: unset;
+        padding: 0 6.25rem 0 0;
+    }
+
+    .leftParagraphe {
+        width: 50%;
+    }
+
+    .rightForm {
+        position: unset;
+        width: 50%;
+    }
+
+    .underImage {
+        width: 50vw;
+        height: 44vh;
+        top: 2rem;
+        left: 1rem;
+    }
+}
+
+@media (max-width: 1250px) {
+    header {
+        margin-right: 6.25rem;
+        flex-direction: column;
+    }
+
+    .headerText {
+        flex-direction: row !important;
+        width: 100%;
+        max-width: 1100px;
+        align-items: center;
+    }
+
+    .headerImage {
+        width: 100%;
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
+    .headerText .logo {
+        max-width: 150px;
+    }
+
+    .headerLocalisation h1 {
+        font-size: 36px !important;
+    }
+
+    .headerPrice h2 {
+        font-size: 24px;
+    }
+
+    .transparentPrice h2 {
+        font-size: 24px;
+    }
+
+    .redPrice h2 {
+        font-size: 24px;
+    }
+
+    .cta {
+        flex-direction: column;
+    }
+
+    .leftParagraphe {
+        width: 100%;
+    }
+
+    .rightForm {
+        width: 100%;
+        max-width: 900px;
+    }
+    
+    .photo {
+        margin-right: 6.25rem;
+        max-height: 520px;
+        height: 60vh;
+    }
+
+    .photo .upperImage {
+        width: 100%;
+    }
+
+    .upperImage img {
+        width: 100%;
+        max-width: 850px;
+        max-height: 800px;
+    }
+
+    .underImage {
+        width: 89vw;
+        max-width: 850px;
+        height: 90vh;
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerText {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .photo {
+        max-height: 388px;
+    }
+
+    .underImage {
+        max-height: 360px;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 8px;
+    }
+
+    .livraison {
+        font-size: 1rem;
+    }
+
+    .livraison svg {
+        width: 2rem;
+    }
+
+    .leftParagraphe h3 {
+        font-size: 20px;
+    }
+
+    .leftParagraphe ul {
+        font-size: 16px;
+    }
+
+    .leftParagraphe p {
+        font-size: 16px;
+    }
+
+    .rightForm h2 {
+        font-size: 20px;
+    }
+
+    .rightForm form {
+        font-size: 14px;
+    }
+
+    .photo {
+        position: unset;
+        max-height: unset;
+        height: unset;
+    }
+
+    .photo .upperImage {
+        position: unset;
+    }
+
+    .underImage {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .rightForm form {
+        font-size: 10px;
+    }
+
+    .rightForm form .submitForm {
+        font-size: 12px;
+    }
+
+    .rightForm form .submitForm svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .headerLocalisation h1 {
+        font-size: 24px !important;
+    }
+
+    .headerPrice h2 {
+        font-size: 16px;
+    }
+
+    .transparentPrice h2 {
+        font-size: 16px;
+    }
+
+    .redPrice h2 {
+        font-size: 16px;
+    }
+
+    .travaux {
+        font-size: 8px;
+        right: 2rem;
+    }
+
+    .leftParagraphe h3 {
+        font-size: 16px;
+    }
+
+    .leftParagraphe ul, p {
+        font-size: 14px;
+    }
+
+    .rightForm h2 {
+        font-size: 16px;
+    }
+
+    .rightForm form {
+        font-size: 8px;
+    }
+
+    .rightForm form .checkboxInput label {
+        font-size: 8px;
+    }
+
+    .rightForm form .submitForm {
+        font-size: 8px;
+    }
+
+    .rightForm form .submitForm svg {
+        width: 12px;
+        height: 12px;
+    }
 }
