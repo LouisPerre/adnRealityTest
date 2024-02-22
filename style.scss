@@ -1,0 +1,620 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  /* color: #002a5c; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, span, p {
+  margin-bottom: 0 !important;
+}
+
+body {
+  padding-left: 6.25rem;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 48px !important;
+  font-weight: 600 !important;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 4.3rem !important;
+  /* max-width: 1510px; */
+}
+
+.logo {
+  width: 50%;
+  max-width: 200px;
+}
+
+.headerText {
+  width: 80%;
+  max-width: 480px;
+  padding-top: 2rem;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.headerLocalisation h1 {
+  color: #002A5C;
+  margin-bottom: 0.2rem !important;
+}
+
+.headerLocalisation span {
+  background-color: #fff7f7;
+  color: #d51125;
+  padding: 0.6rem 1rem;
+  border-radius: 21px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.headerLocalisation svg {
+  width: 16px;
+  fill: #d51125;
+}
+
+.headerPrice h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 1rem !important;
+  color: #002A5C;
+}
+
+.price {
+  position: relative;
+  height: 105px;
+}
+
+.redPrice {
+  background-color: #D51125;
+  color: white !important;
+  font-size: 0.6rem;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  /* width: 100%; */
+  position: absolute;
+  z-index: 2;
+}
+
+.redPrice h2 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #fff;
+  width: max-content;
+}
+
+.redPrice p {
+  width: max-content;
+}
+
+.transparentPrice {
+  background-color: transparent;
+  color: white !important;
+  font-size: 0.6rem;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  /* width: 100%; */
+  border: 1px solid #002A5C;
+  z-index: 0;
+}
+
+.transparentPrice h2 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #fff;
+  width: max-content;
+}
+
+.transparentPrice p {
+  width: max-content;
+}
+
+.headerImage {
+  max-width: 1030px;
+  max-height: 620px;
+  width: 80%;
+  position: relative;
+}
+
+.headerImage img {
+  width: 100%;
+}
+
+.livraison {
+  display: flex;
+  background-color: #145A97;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  /* gap: 0.5rem; */
+  align-items: center;
+  padding: 0.7rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+  transition: all 0.1s ease-in;
+}
+
+.livraison:hover {
+  background-color: #0e3f6a;
+}
+
+.clock {
+  width: 22px;
+  fill: white;
+  margin-right: 0.5rem;
+}
+
+.travaux {
+  background-color: #D51125;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  /* gap: 0.5rem; */
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 2rem;
+  right: 100px;
+  transition: all 0.1s ease-in;
+}
+
+.travaux:hover {
+  background-color: #9d0b1a;
+}
+
+@media (min-width: 1700px) {
+  .headerImage {
+    max-width: 1200px;
+    max-height: 700px;
+  }
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-bottom: 5rem !important;
+}
+
+.cta {
+  display: flex;
+  gap: 6.25rem;
+  width: 100%;
+  position: relative;
+}
+
+.leftParagraphe {
+  width: 75%;
+  max-width: 850px;
+  color: #002A5C;
+}
+
+.leftParagraphe h3 {
+  font-size: 36px;
+  margin-bottom: 2.6rem !important;
+}
+
+.leftParagraphe ul {
+  font-size: 22px;
+  margin-bottom: 4rem !important;
+  list-style: none;
+}
+
+.leftParagraphe ul li svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+  padding: 0.2rem;
+  border-radius: 50%;
+  background-color: #D51125;
+  margin-right: 1rem;
+  /* fill: #D51125; */
+}
+
+.leftParagraphe > .firstParagraphe {
+  margin-bottom: 1rem !important;
+}
+
+.leftParagraphe p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.rightForm {
+  width: 31%;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 3rem 1rem 3rem;
+  background-color: #145A97;
+  color: white;
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+
+.rightForm h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem !important;
+}
+
+.rightForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rightForm form .radioInput {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.rightForm input[type=text], textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #fff;
+}
+
+.rightForm textarea {
+  padding: 0.5rem 1rem;
+  height: 90px;
+}
+
+.rightForm .inputNumber {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rightForm .checkboxInput {
+  display: flex;
+  gap: 0.2rem;
+  align-items: flex-start;
+}
+
+.rightForm .checkboxInput label {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.rightForm .checkboxInput label span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.rightForm input[type=radio]:after {
+  width: 17.25px;
+  height: 17.25px;
+  border-radius: 17.25px;
+  top: -2px;
+  left: -5px;
+  position: relative;
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.rightForm input[type=radio]:checked:after {
+  width: 17.25px;
+  height: 17.25px;
+  border-radius: 17.25px;
+  top: -2px;
+  left: -5px;
+  position: relative;
+  background-color: #D51125;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.rightForm input[type=checkbox] {
+  accent-color: #fff;
+}
+
+.rightForm .submitForm {
+  border: none;
+  outline: none;
+  display: flex;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  background-color: #D51125;
+  width: 100%;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.rightForm .submitForm svg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  stroke: #D51125;
+  padding: 0.2rem;
+}
+
+form > span {
+  width: 100%;
+  font-size: 10px;
+}
+
+.photo {
+  position: relative;
+  height: 51vh;
+  max-height: 452px;
+}
+
+.photo .upperImage {
+  width: 55%;
+  position: absolute;
+  z-index: 2;
+}
+
+.upperImage img {
+  width: 95%;
+  max-width: 755px;
+  max-height: 420px;
+}
+
+.underImage {
+  width: 51vw;
+  height: 500px;
+  max-width: 755px;
+  max-height: 420px;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background-color: #145A97;
+  z-index: 0;
+}
+
+footer {
+  font-size: 12px;
+  font-weight: 400;
+  color: #002A5C;
+  margin-right: 6.25rem;
+  text-align: justify;
+}
+
+/* @media (max-width: 1463px) {
+    .underImage {
+        max-width: 720px;
+    }
+} */
+@media (max-width: 1440px) {
+  .rightForm {
+    right: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  .headerLocalisation h1 {
+    font-size: 40px !important;
+  }
+  .headerPrice h2 {
+    font-size: 30px;
+  }
+  .transparentPrice h2 {
+    font-size: 30px;
+  }
+  .redPrice h2 {
+    font-size: 30px;
+  }
+  .livraison {
+    font-size: 16px;
+  }
+  .cta {
+    position: unset;
+    padding: 0 6.25rem 0 0;
+  }
+  .leftParagraphe {
+    width: 50%;
+  }
+  .rightForm {
+    position: unset;
+    width: 50%;
+  }
+  .underImage {
+    width: 50vw;
+    height: 44vh;
+    top: 2rem;
+    left: 1rem;
+  }
+}
+@media (max-width: 1250px) {
+  header {
+    margin-right: 6.25rem;
+    flex-direction: column;
+  }
+  .headerText {
+    flex-direction: row !important;
+    width: 100%;
+    max-width: 1100px;
+    align-items: center;
+  }
+  .headerImage {
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .headerText .logo {
+    max-width: 150px;
+  }
+  .headerLocalisation h1 {
+    font-size: 36px !important;
+  }
+  .headerPrice h2 {
+    font-size: 24px;
+  }
+  .transparentPrice h2 {
+    font-size: 24px;
+  }
+  .redPrice h2 {
+    font-size: 24px;
+  }
+  .cta {
+    flex-direction: column;
+  }
+  .leftParagraphe {
+    width: 100%;
+  }
+  .rightForm {
+    width: 100%;
+    max-width: 900px;
+  }
+  .photo {
+    margin-right: 6.25rem;
+    max-height: 520px;
+    height: 60vh;
+  }
+  .photo .upperImage {
+    width: 100%;
+  }
+  .upperImage img {
+    width: 100%;
+    max-width: 850px;
+    max-height: 800px;
+  }
+  .underImage {
+    width: 89vw;
+    max-width: 83vw;
+    height: 34vh;
+    max-height: 471px;
+  }
+}
+@media (max-width: 768px) {
+  .headerText {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .photo {
+    max-height: 388px;
+  }
+  .underImage {
+    max-height: 360px;
+    max-width: 600px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 8px;
+  }
+  .livraison {
+    font-size: 1rem;
+  }
+  .livraison svg {
+    width: 2rem;
+  }
+  .leftParagraphe h3 {
+    font-size: 20px;
+  }
+  .leftParagraphe ul {
+    font-size: 16px;
+  }
+  .leftParagraphe p {
+    font-size: 16px;
+  }
+  .rightForm h2 {
+    font-size: 20px;
+  }
+  .rightForm form {
+    font-size: 14px;
+  }
+  .photo {
+    position: unset;
+    max-height: unset;
+    height: unset;
+  }
+  .photo .upperImage {
+    position: unset;
+  }
+  .underImage {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .rightForm form {
+    font-size: 10px;
+  }
+  .rightForm form .submitForm {
+    font-size: 12px;
+  }
+  .rightForm form .submitForm svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .headerLocalisation h1 {
+    font-size: 24px !important;
+  }
+  .headerPrice h2 {
+    font-size: 16px;
+  }
+  .transparentPrice h2 {
+    font-size: 16px;
+  }
+  .redPrice h2 {
+    font-size: 16px;
+  }
+  .travaux {
+    font-size: 8px;
+    right: 2rem;
+  }
+  .leftParagraphe h3 {
+    font-size: 16px;
+  }
+  .leftParagraphe ul, p {
+    font-size: 14px;
+  }
+  .rightForm h2 {
+    font-size: 16px;
+  }
+  .rightForm form {
+    font-size: 8px;
+  }
+  .rightForm form .checkboxInput label {
+    font-size: 8px;
+  }
+  .rightForm form .submitForm {
+    font-size: 8px;
+  }
+  .rightForm form .submitForm svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/*# sourceMappingURL=style.scss.map */
